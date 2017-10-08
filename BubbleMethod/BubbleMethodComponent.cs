@@ -179,11 +179,12 @@ namespace BubbleMethod
                         { FeatureV[FeatureV.Count - 1] = j; }
                     }
                 }
-
+                //
                 int EdgeCount = P.Halfedges.Count / 2;
                 for (int i = 0; i < EdgeCount; i++)
                 {
                     FeatureE.Add(-1);
+                    //同一条线分为两条线编号分别为2i和2i+1，朝向相对，两个的起始点为
                     int vStart = P.Halfedges[2 * i].StartVertex;
                     int vEnd = P.Halfedges[2 * i + 1].StartVertex;
 
