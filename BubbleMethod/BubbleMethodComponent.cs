@@ -25,6 +25,7 @@ using System.Runtime.InteropServices;
 
 
 using KangarooSolver;
+using KangarooLib;
 using KangarooSolver.Goals;
 using Plankton;
 using PlanktonGh;
